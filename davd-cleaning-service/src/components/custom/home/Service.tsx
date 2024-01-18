@@ -18,7 +18,7 @@ const Service = () => {
           Our services
         </Typography>
 
-        <motion.div className="flex flex-row flex-wrap sm:flex-nowrap gap-20 sm:gap-5 lg:gap-10 xl:gap-14 mt-28 text-left items-stretch">
+        <motion.div className="flex flex-row flex-wrap sm:flex-nowrap gap-20 sm:gap-5 lg:gap-10 xl:gap-14 mt-12 text-left items-stretch">
           <motion.div
             initial="hidden"
             whileInView={"show"}
@@ -106,8 +106,6 @@ const Service = () => {
             </motion.div>
           </motion.div>
         </motion.div>
-
-        <Button className="text-xs h-12 w-48 mt-24">Learn More</Button>
       </div>
     </motion.div>
   );
