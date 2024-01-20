@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav";
 
 const Nav = () => {
   return (
-    <nav className="bg-primary shadow-lg fixed z-10 w-full">
+    <nav className="bg-primary shadow-lg fixed z-30 w-full">
       <div className="container flex justify-between items-center py-5">
         <Link href="/">
           <h1 className="font-bold text-3xl text-secondary">Logo</h1>

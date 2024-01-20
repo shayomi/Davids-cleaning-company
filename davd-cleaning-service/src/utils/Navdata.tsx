@@ -13,7 +13,7 @@ export const Navitems = [
   },
   {
     name: "consultations",
-    href: "#consulations",
+    href: "#pricing",
   },
   {
     name: "contact",

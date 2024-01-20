@@ -20,10 +20,7 @@ export default function Footer() {
             >
               CleanScape Property Management is a premier property cleaning
               company offering a diverse range of services for residential,
-              commercial, industrial, and institutional properties. Our
-              customized cleaning plans, executed by a professional and reliable
-              team, ensure exceptional cleanliness tailored to the unique needs
-              of each property.
+              commercial, industrial, and institutional properties.
             </Typography>
             <Typography variant="p" className="font-normal text-white">
               info@cleaningservice.com

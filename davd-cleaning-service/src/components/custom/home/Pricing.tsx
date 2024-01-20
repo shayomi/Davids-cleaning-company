@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Pricing = () => {
   return (
-    <motion.div className="mt-24 ">
+    <motion.div className="mt-24  " id="pricing">
       <div className="flex flex-col gap-y-8">
         <h1 className="background-text text-center ">PRICING</h1>
 

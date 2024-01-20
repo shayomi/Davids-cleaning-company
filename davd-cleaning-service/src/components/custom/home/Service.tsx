@@ -23,7 +23,7 @@ const Service = () => {
   }, []);
 
   return (
-    <motion.div>
+    <motion.div id="service">
       <div className="container text-center mt-12 bg-[#f5f5f5]">
         <h1 className="background-text  pt-12">
           {isLoading ? (

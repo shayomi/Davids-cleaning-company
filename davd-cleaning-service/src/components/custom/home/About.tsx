@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <motion.div className="container mt-12">
+    <motion.div className="container mt-12" id="about">
       <div className="flex flex-wrap md:flex-nowrap gap-10 sm:gap-8 lg:gap-14 items-center mx-auto">
         <motion.div
           variants={FadeIn("right", "tween", 0.6, 1.2)}

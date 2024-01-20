@@ -9,7 +9,7 @@ import { transition1 } from "@/Transition";
 
 const Contact = () => {
   return (
-    <motion.div className="container  mt-24 bg-[#f5f5f5]">
+    <motion.div className="container  mt-24 bg-[#f5f5f5]" id="contact">
       <h1 className="background-text pt-12 text-left">Contact</h1>
       <motion.div className="pb-24">
         <h2 className="text-3xl lg:text-5xl text-foreground ">Contact Us</h2>
