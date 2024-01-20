@@ -10,7 +10,7 @@ const Quote = () => {
         </Typography>
         <Separator />
         <Typography variant="p" className="text-foreground font-normal">
-          We've got you covered
+          We&apos;ve got you covered
         </Typography>
       </div>
     </div>
