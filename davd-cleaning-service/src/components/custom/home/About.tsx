@@ -4,6 +4,7 @@ import { Typography } from "@/components/ui/Typography";
 import { motion } from "framer-motion";
 import { FadeIn } from "@/Variant";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const About = () => {
   return (
