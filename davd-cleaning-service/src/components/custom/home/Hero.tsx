@@ -53,7 +53,7 @@ const HomeHero = () => {
                 </div>
 
                 <Typography variant="p" className="max-w-[80%] mb-10">
-                  We do the dirty work so you don’t have to
+                  We do the dirty work so you don&apos;t have to
                 </Typography>
 
                 <a
