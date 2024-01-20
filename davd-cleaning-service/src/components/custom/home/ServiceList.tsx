@@ -8,7 +8,7 @@ import { transition1 } from "@/Transition";
 
 const ServiceList = () => {
   return (
-    <motion.div className="container  bg-[#f5f5f5] pb-24">
+    <motion.div className="container  bg-[#f5f5f5] pb-48">
       <Typography variant="h3" className="text-start">
         Our list of services covers the following and more
       </Typography>
@@ -18,7 +18,7 @@ const ServiceList = () => {
             <motion.ul
               initial="hidden"
               whileInView={"show"}
-              variants={FadeIn("up", "spring", index * 0.2, 1.0)}
+              variants={FadeIn("up", "spring", index * 0.1, 0.8)}
               whileHover={{ scale: 1.1 }}
               transition={transition1}
               key={index}

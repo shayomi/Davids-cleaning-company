@@ -25,7 +25,7 @@ const Service = () => {
   return (
     <motion.div>
       <div className="container text-center mt-12 bg-[#f5f5f5]">
-        <h1 className="background-text sm:text-[6rem] xl:text-[7.2rem] sm:text-left pt-12">
+        <h1 className="background-text  pt-12">
           {isLoading ? (
             <Skeleton className="w-1/4 h-12 mb-6 rounded-md" />
           ) : (
@@ -47,9 +47,10 @@ const Service = () => {
               <motion.div
                 initial="hidden"
                 whileInView={"show"}
-                variants={FadeIn("up", "tween", index * 0.2, 0.4)}
+                variants={FadeIn("up", "tween", index * 0.2, 0.6)}
                 whileHover={{ scale: 1.05 }}
                 transition={transition1}
+                key={index}
                 className="bg-white py-10 px-6 rounded-3xl h-full shadow-2xl"
               >
                 <img

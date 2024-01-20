@@ -27,7 +27,7 @@ const MobileNav = () => {
                 <h1>Logo</h1>
               </Link>
 
-              <Button className="text-xs w-32">Apply Now</Button>
+              <Button className="text-xs w-32">Get Started</Button>
             </SheetTitle>
 
             <div className="flex flex-col space-y-5 pb-5">

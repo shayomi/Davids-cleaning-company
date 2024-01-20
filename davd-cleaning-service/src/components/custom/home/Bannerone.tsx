@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const Bannerone = () => {
   return (
-    <div className="bg-[#0591E9]">
+    <div className="bg-[#0591E9] ">
       <div className="grid grids-col-1 md:grid-cols-2 px-6 py-12 ">
         <motion.div
           variants={FadeIn("down", "tween", 0.6, 0.6)}
@@ -27,7 +27,7 @@ const Bannerone = () => {
         </motion.div>
 
         <motion.div
-          variants={FadeIn("right", "tween", 0.6, 1.2)}
+          variants={FadeIn("down", "tween", 0.6, 1.2)}
           initial="hidden"
           whileInView={"show"}
           exit={"show"}

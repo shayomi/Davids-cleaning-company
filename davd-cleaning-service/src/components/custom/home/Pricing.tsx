@@ -10,15 +10,21 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Pricing = () => {
   return (
-    <motion.div className=" ">
+    <motion.div className="mt-24 ">
       <div className="flex flex-col gap-y-8">
-        <h1 className="background-text ">PRICING</h1>
+        <h1 className="background-text text-center ">PRICING</h1>
 
         <div>
           <Typography variant="h3" className="text-center">
             Pricing
           </Typography>
-          <div className="flex flex-col max-w-[700px] mx-auto gap-y-4 mt-12 px-4">
+          <motion.div
+            variants={FadeIn("up", "tween", 0.6, 1.2)}
+            initial="hidden"
+            whileInView={"show"}
+            exit={"show"}
+            className="flex flex-col max-w-[700px] mx-auto gap-y-4 mt-12 px-8  md:px-4"
+          >
             <Typography>Your name</Typography>
             <Input />
 
@@ -34,7 +40,7 @@ const Pricing = () => {
             <Button className="bg-primary hover:bg-[43A4EE] mt-6">
               Get Quote
             </Button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>
