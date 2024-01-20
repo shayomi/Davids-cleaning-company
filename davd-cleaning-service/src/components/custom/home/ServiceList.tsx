@@ -8,36 +8,24 @@ import { transition1 } from "@/Transition";
 
 const ServiceList = () => {
   return (
-    <motion.div className="container mt-24">
-      <h1 className="background-text sm:text-[6rem] xl:text-[7.2rem] sm:text-left">
-        WHAT WE DO
-      </h1>
-
+    <motion.div className="container  bg-[#f5f5f5] pb-24">
       <Typography variant="h3" className="text-start">
         Our list of services covers the following and more
       </Typography>
-      <div className="flex flex-col lg:flex-row gap-x-5 gap-y-6 mt-24">
-        <motion.img
-          initial="hidden"
-          whileInView={"show"}
-          variants={FadeIn("right", "tween", 0.6, 1.0)}
-          src="/images/service-img.png"
-          alt="Service overview"
-          className="max-w-[500px]  h-auto rounded-xl mx-auto "
-        />
-        <motion.div
-          initial="hidden"
-          whileInView={"show"}
-          variants={FadeIn("left", "tween", 0.6, 1.0)}
-          className="grid grid-cols-2 md:grid-cols-3 gap-x-4 px-0 md:px-6 gap-y-4 mx-auto"
-        >
+      <div className=" mt-12">
+        <motion.div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-4 xl:gap-6 mt-12 sm:mt-16">
           {serviceitems.map((item, index) => (
-            <ul
+            <motion.ul
+              initial="hidden"
+              whileInView={"show"}
+              variants={FadeIn("up", "spring", index * 0.2, 1.0)}
+              whileHover={{ scale: 1.1 }}
+              transition={transition1}
               key={index}
-              className="text-primary hover:text-gray-500 px-4 font-normal list-disc  "
+              className="bg-[#dbe8ef] shadow-xl gray-card-shadow px-2.5 py-5 sm:px-4 sm:py-6 text-center rounded-lg text-foreground "
             >
               <li>{item.name}</li>
-            </ul>
+            </motion.ul>
           ))}
         </motion.div>
       </div>

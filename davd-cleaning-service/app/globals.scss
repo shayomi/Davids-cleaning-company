@@ -69,6 +69,13 @@
   }
 }
 
+%pricing-banner-common {
+  @apply bg-accent bg-cover bg-center w-full flex items-center;
+
+  @media screen and (max-width: 768px) {
+    background-position-x: 30%;
+  }
+}
 .hero-banner-bg {
   @extend %hero-banner-common;
   background-image: url("../public/images/hero-bg.png");
@@ -76,15 +83,12 @@
   width: 100%;
 }
 
-// .faq-hero-banner-bg,
-// .news-hero-banner-bg {
-//   @extend %hero-banner-common;
-//   height: 420px;
-// }
-
-// .faq-hero-banner-bg {
-//   background-image: url("../../public/images/faq-hero-banner.png");
-// }
+.pricing-hero-banner-bg {
+  @extend %pricing-banner-common;
+  background-image: url("../public/images/pricing-bg.png");
+  height: 85vh;
+  width: 100%;
+}
 
 // .news-hero-banner-bg {
 //   background-image: url("../../public/images/news-hero-banner.png");

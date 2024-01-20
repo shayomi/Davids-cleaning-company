@@ -8,18 +8,18 @@ import { Button } from "@/components/ui/button";
 const About = () => {
   return (
     <motion.div className="container mt-12">
-      <div className="flex flex-wrap md:flex-nowrap gap-10 sm:gap-8 lg:gap-14 items-center">
+      <div className="flex flex-wrap md:flex-nowrap gap-10 sm:gap-8 lg:gap-14 items-center mx-auto">
         <motion.div
-          variants={FadeIn("down", "tween", 0.6, 1.2)}
+          variants={FadeIn("right", "tween", 0.6, 1.2)}
           initial="hidden"
           whileInView={"show"}
           exit={"show"}
           className="basis-full sm:basis-6/12 lg:basis-5/12"
         >
           <img
-            src="/images/about-img.png"
-            alt="Home overview"
-            className="w-full h-auto pt-12"
+            src="/images/about.png"
+            alt="About"
+            className="w-full h-auto pt-12 mx-auto "
           />
         </motion.div>
 
@@ -27,13 +27,15 @@ const About = () => {
           <h1 className="background-text">ABOUT</h1>
 
           <motion.div
-            variants={FadeIn("up", "tween", 0.6, 1.2)}
+            variants={FadeIn("left", "tween", 0.6, 1.2)}
             initial="hidden"
             whileInView={"show"}
             exit={"show"}
             className="lg:max-w-[590px] lg:ml-auto z-20 -mt-4"
           >
-            <Typography variant="h3">About Us,</Typography>
+            <Typography variant="h3" className=" order-1 md:order-none">
+              About Us,
+            </Typography>
 
             <Typography variant="p">
               CleanScape Property Management is a premier property cleaning
